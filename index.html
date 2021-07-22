@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI calculator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="application">
+        <header class="application__header">
+            <h1 class="application__title">BMI CALCULATOR</h1>
+            <h4 class="application__description">Check your own bmi ratio!</h2>
+        </header>
+        <section class="application__inputs">
+            <form class="application__form">
+                <label for="application__input__weight">Weight [kg]</label>
+                <input id="application__input__weight" type="number" step="0.01">
+                <label for="application__input__weight">Height [cm]</label>
+                <input id="application__input__height" type="number" step="0.01">
+            </form>
+            <button id="application__button">Calculate</button>
+        </section>
+        <section class="application__outputs">
+            <h2 id="application__bmi-index"></h2>
+            <p id="application__bmi-description"></p>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
